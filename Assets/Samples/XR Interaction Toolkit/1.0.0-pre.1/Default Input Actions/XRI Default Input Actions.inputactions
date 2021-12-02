@@ -806,6 +806,33 @@
                     "isPartOfComposite": false
                 }
             ]
+        },
+        {
+            "name": "Keyboard",
+            "id": "b7e6620d-fa20-452e-bcc1-98cc7cef086e",
+            "actions": [
+                {
+                    "name": "Report Tip",
+                    "type": "Button",
+                    "id": "e7d9c93e-df6a-4c22-9b29-3fe69b8fbf6d",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "b7d6bdac-d2ca-4560-9c8e-1d33ad121269",
+                    "path": "<Keyboard>/t",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Report Tip",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
         }
     ],
     "controlSchemes": [

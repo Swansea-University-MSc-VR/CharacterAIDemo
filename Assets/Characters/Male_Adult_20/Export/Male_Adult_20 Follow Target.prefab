@@ -296,8 +296,8 @@ SkinnedMeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: -5956485582869904290, guid: 4769ac733a5f68946b4b975746e9f2dc, type: 3}
-  - {fileID: -6943933175863301080, guid: 4769ac733a5f68946b4b975746e9f2dc, type: 3}
+  - {fileID: 2100000, guid: 2eb94c5fdf979474f843109b5ef701b2, type: 2}
+  - {fileID: 2100000, guid: 00e0f259dc0fc364d817ea7c663db6e2, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2082,7 +2082,7 @@ GameObject:
   - component: {fileID: 5780504903136637751}
   - component: {fileID: 5780504903136637748}
   m_Layer: 0
-  m_Name: Male_Adult_20
+  m_Name: Male_Adult_20 Follow Target
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2159,6 +2159,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   navMeshAgent: {fileID: 5780504903136637751}
   animator: {fileID: 95401586429021857}
+  turnSmoothing: 15
+  speedDampTime: 0.1
+  slowingSpeed: 0.175
+  turnSpeedThreshold: 0.5
   target: {fileID: 0}
 --- !u!1 &6824159265984036455
 GameObject:

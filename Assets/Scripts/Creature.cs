@@ -49,6 +49,10 @@ public abstract class Creature : MonoBehaviour
         }
     }
 
+    
+
+
+
     #endregion
 
     protected virtual void Start()

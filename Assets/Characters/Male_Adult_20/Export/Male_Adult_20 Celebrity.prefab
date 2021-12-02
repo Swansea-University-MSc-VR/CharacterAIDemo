@@ -1173,6 +1173,7 @@ MonoBehaviour:
   slowingSpeed: 0.175
   turnSpeedThreshold: 0.5
   target: {fileID: 0}
+  arriveTime: 0
 --- !u!1 &3620024046791450435
 GameObject:
   m_ObjectHideFlags: 0
@@ -2668,8 +2669,8 @@ SkinnedMeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: -5956485582869904290, guid: 4769ac733a5f68946b4b975746e9f2dc, type: 3}
-  - {fileID: -6943933175863301080, guid: 4769ac733a5f68946b4b975746e9f2dc, type: 3}
+  - {fileID: 2100000, guid: 2eb94c5fdf979474f843109b5ef701b2, type: 2}
+  - {fileID: 2100000, guid: 00e0f259dc0fc364d817ea7c663db6e2, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

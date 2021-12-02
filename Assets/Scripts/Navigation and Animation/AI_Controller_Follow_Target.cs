@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 
+
 public class AI_Controller_Follow_Target : MonoBehaviour
 {
     public NavMeshAgent navMeshAgent;
@@ -15,6 +16,10 @@ public class AI_Controller_Follow_Target : MonoBehaviour
     private const float stopDistanceProportion = 0.1f;    // The proportion of the nav mesh agent's stopping distance within which the player stops completely.
 
     public Transform target;
+
+
+    public float arriveTime;
+    private float _arriveTimer;
 
     // Start is called before the first frame update
     void Start()
@@ -56,6 +61,14 @@ public class AI_Controller_Follow_Target : MonoBehaviour
 
         // Set the animator's Speed parameter based on the (possibly modified) speed that the nav mesh agent wants to move at.
         animator.SetFloat("Speed", speed, speedDampTime, Time.deltaTime);
+
+        if (speed == 0f)
+        {
+            _arriveTimer += Time.deltaTime;
+            
+        }
+        else
+            _arriveTimer = 0f;
 
     }
 
@@ -103,5 +116,6 @@ public class AI_Controller_Follow_Target : MonoBehaviour
         // Set the speed (which is what the animator will use) to zero.
         speed = 0f;
     }
+
 
 }
