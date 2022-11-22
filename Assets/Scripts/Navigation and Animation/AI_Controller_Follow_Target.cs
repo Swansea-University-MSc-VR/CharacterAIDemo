@@ -13,7 +13,7 @@ public class AI_Controller_Follow_Target : MonoBehaviour
     public float speedDampTime = 0.1f;          // The approximate amount of time it takes for the speed parameter to reach its value upon being set.
     public float slowingSpeed = 0.175f;         // The speed the player moves as it reaches close to it's destination.
     public float turnSpeedThreshold = 0.5f;     // The speed beyond which the player can move and turn normally.
-    private const float stopDistanceProportion = 0.1f;    // The proportion of the nav mesh agent's stopping distance within which the player stops completely.
+    public float stopDistanceProportion = 0.1f;    // The proportion of the nav mesh agent's stopping distance within which the player stops completely.
 
     public Transform target;
 

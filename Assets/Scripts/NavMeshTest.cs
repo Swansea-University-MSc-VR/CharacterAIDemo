@@ -16,6 +16,4 @@ public class NavMeshTest : MonoBehaviour
     {
         myNavMeshAgent.SetDestination(target.transform.position);
     }
-
-
 }
