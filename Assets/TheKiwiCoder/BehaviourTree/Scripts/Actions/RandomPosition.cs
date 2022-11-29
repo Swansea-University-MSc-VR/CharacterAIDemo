@@ -5,9 +5,8 @@ using TheKiwiCoder;
 
 [System.Serializable]
 public class RandomPosition : ActionNode {
-    public Vector2 min = Vector2.one * -10;
-    public Vector2 max = Vector2.one * 10;
-
+    public Vector3 min;
+    public Vector3 max;
     protected override void OnStart() {
     }
 
@@ -18,6 +17,7 @@ public class RandomPosition : ActionNode {
         Vector3 pos = new Vector3();
         pos.x = Random.Range(min.x, max.x);
         pos.y = Random.Range(min.y, max.y);
+        pos.z = Random.Range(min.z, max.z);
         blackboard.moveToPosition = pos;
         return State.Success;
     }

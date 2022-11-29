@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.Android.Types;
 using UnityEngine;
 
 namespace TheKiwiCoder {
@@ -11,5 +12,7 @@ namespace TheKiwiCoder {
     public class Blackboard {
 
         public Vector3 moveToPosition;
+        public bool hasIceCream;
+        public GameObject ai;
     }
 }
