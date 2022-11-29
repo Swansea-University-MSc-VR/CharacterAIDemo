@@ -12,6 +12,17 @@ public class DrawNavigationPath : MonoBehaviour
     public float updateRate = 1f;
     private float elapsed = 0.0f;
 
+    public enum PathColour
+    {
+        Blue,
+        Yellow,
+        GreenRed,
+    }
+
+    public PathColour pathColour;   
+    public PathColour alternativePathColour;
+
+
     private void Update()
     {
         elapsed += Time.deltaTime;

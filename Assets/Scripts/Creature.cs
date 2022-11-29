@@ -26,10 +26,15 @@ public abstract class Creature : MonoBehaviour
         ChargingSuper = 15,
         Celebrating = 16,
         Dead = 17,
+        InVR,
     }
 
 
     #region variables
+
+    public CreatureState state;
+
+
 
     protected CreatureState _creatureState;
     public CreatureState creatureState
@@ -47,20 +52,13 @@ public abstract class Creature : MonoBehaviour
                 EnterState(_creatureState);
             }
         }
-    }
-
-    
+    } 
 
 
 
     #endregion
 
-    protected virtual void Start()
-    {
-        creatureState = CreatureState.Waiting;
-    }
-
-
+  
     void EnterState(CreatureState stateEntered)
     {
         switch (stateEntered)

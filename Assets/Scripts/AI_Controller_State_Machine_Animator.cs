@@ -14,7 +14,7 @@ public class AI_Controller_State_Machine_Animator : MonoBehaviour
 
     private void OnEnable()
     {
-        Newspaper.onCelebritySpottedAtCafe += Newspaper_onCelebritySpottedAtCafe;
+        Newspaper.OnCelebritySpottedAtCafe += Newspaper_onCelebritySpottedAtCafe;   
     }
 
     private void Newspaper_onCelebritySpottedAtCafe()
@@ -25,6 +25,6 @@ public class AI_Controller_State_Machine_Animator : MonoBehaviour
 
     private void OnDisable()
     {
-        Newspaper.onCelebritySpottedAtCafe -= Newspaper_onCelebritySpottedAtCafe;
+        Newspaper.OnCelebritySpottedAtCafe -= Newspaper_onCelebritySpottedAtCafe;
     }
 }
