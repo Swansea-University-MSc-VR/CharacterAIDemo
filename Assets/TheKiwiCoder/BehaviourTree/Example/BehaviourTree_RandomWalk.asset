@@ -25,8 +25,9 @@ MonoBehaviour:
   blackboard:
     moveToPosition: {x: 73.64, y: 0, z: 20}
     hasIceCream: 0
-  viewPosition: {x: -414, y: 911, z: 0}
-  viewScale: {x: 1, y: 1, z: 1}
+    ai: {fileID: 0}
+  viewPosition: {x: -277.6, y: 271.2, z: 0}
+  viewScale: {x: 0.65751624, y: 0.65751624, z: 1}
   references:
     version: 2
     RefIds:
@@ -40,6 +41,7 @@ MonoBehaviour:
         blackboard:
           moveToPosition: {x: 0, y: 0, z: 0}
           hasIceCream: 0
+          ai: {fileID: 0}
         description: Where it all begins!
         drawGizmos: 0
         child:
@@ -54,6 +56,7 @@ MonoBehaviour:
         blackboard:
           moveToPosition: {x: 0, y: 0, z: 0}
           hasIceCream: 0
+          ai: {fileID: 0}
         description: Repeat forever
         drawGizmos: 0
         child:
@@ -70,6 +73,7 @@ MonoBehaviour:
         blackboard:
           moveToPosition: {x: 0, y: 0, z: 0}
           hasIceCream: 0
+          ai: {fileID: 0}
         description: Select random position, move to it, then wait
         drawGizmos: 0
         children:
@@ -86,10 +90,11 @@ MonoBehaviour:
         blackboard:
           moveToPosition: {x: 0, y: 0, z: 0}
           hasIceCream: 0
+          ai: {fileID: 0}
         description: Randomly generates a position into the blackboard
         drawGizmos: 0
-        min: {x: -10, y: -10}
-        max: {x: 10, y: 10}
+        min: {x: -10, y: -10, z: 0}
+        max: {x: 10, y: 10, z: 0}
     - rid: 4200190926137589873
       type: {class: MoveToPosition, ns: , asm: Assembly-CSharp}
       data:
@@ -100,6 +105,7 @@ MonoBehaviour:
         blackboard:
           moveToPosition: {x: 0, y: 0, z: 0}
           hasIceCream: 0
+          ai: {fileID: 0}
         description: Move to the random position in the blackboard
         drawGizmos: 0
         speed: 5
@@ -117,6 +123,7 @@ MonoBehaviour:
         blackboard:
           moveToPosition: {x: 0, y: 0, z: 0}
           hasIceCream: 0
+          ai: {fileID: 0}
         description: Wait
         drawGizmos: 0
         duration: 1

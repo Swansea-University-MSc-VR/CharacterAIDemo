@@ -10,7 +10,7 @@ public class JoinIceCreamQueue : ActionNode
 
     protected override void OnStart() {
 
-        iceCreamPalour = GameObject.FindObjectOfType<IceCreamPalour>();       
+       // iceCreamPalour = GameObject.FindObjectOfType<IceCreamPalour>();       
 
     }
 
