@@ -12,12 +12,6 @@
       },
       "url": "https://package.openupm.com"
     },
-    "com.replicastudios.link": {
-      "version": "file:C:/Users/tedfl/Downloads/replica-unity-link-v0.0.1.tgz",
-      "depth": 0,
-      "source": "local-tarball",
-      "dependencies": {}
-    },
     "com.unity.ai.navigation": {
       "version": "1.1.5",
       "depth": 0,

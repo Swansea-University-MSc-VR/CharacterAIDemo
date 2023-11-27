@@ -1,7 +1,6 @@
 {
   "dependencies": {
     "com.atteneder.gltfast": "6.0.1",
-    "com.replicastudios.link": "file:C:/Users/tedfl/Downloads/replica-unity-link-v0.0.1.tgz",
     "com.unity.ai.navigation": "1.1.5",
     "com.unity.animation.rigging": "1.2.1",
     "com.unity.cinemachine": "2.9.5",
