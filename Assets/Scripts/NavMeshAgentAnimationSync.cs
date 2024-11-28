@@ -15,6 +15,12 @@ public class NavMeshAgentAnimationSync : MonoBehaviour
     private Vector2 _velocity;
     private Vector2 _smoothDeltaPosition;
 
+    private Vector3 _currentDestination;
+    public Vector3 CurrentDestinaton
+    {
+        get { return _navMeshAgent.destination; }
+        set { _navMeshAgent.SetDestination(value);}
+    }
     public enum BlendTreeType
     {
         OneD,
@@ -84,12 +90,6 @@ public class NavMeshAgentAnimationSync : MonoBehaviour
         {
             transform.position = Vector3.Lerp(_animator.rootPosition, _navMeshAgent.nextPosition, smooth);
         }
-    }
-
-    public void SetNavMeshDestination(Vector3 destination)
-    {
-        Debug.Log("Setting destination to: " + destination);
-        _navMeshAgent.SetDestination(destination);
     }
 
     public void StopMoving()

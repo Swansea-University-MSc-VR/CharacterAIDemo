@@ -9,7 +9,6 @@ public class Newspaper : MonoBehaviour
     public delegate void NewspaperAnnouncementHandler();
     public static event  NewspaperAnnouncementHandler OnCelebritySpottedAtCafe;
 
-
     public bool triggerOnEnable;
 
     private void OnEnable()

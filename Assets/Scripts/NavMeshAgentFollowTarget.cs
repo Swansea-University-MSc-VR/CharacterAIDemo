@@ -21,7 +21,7 @@ public class NavMeshAgentFollowTarget : MonoBehaviour
     {
         if(target != null)
         {
-            _navMeshAgentAnimationSync.SetNavMeshDestination(target.position);
+            _navMeshAgentAnimationSync.CurrentDestinaton = target.position;
         }
     }
 }

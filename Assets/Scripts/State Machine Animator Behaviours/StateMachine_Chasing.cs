@@ -10,15 +10,15 @@ public class StateMachine_Chasing : StateMachineBehaviour
     override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
         _stateMachine = animator.gameObject.GetComponent<AI_Controller_State_Machine_Animator>();
-        _stateMachine.locomotionAnimation.SetNavMeshDestination(_stateMachine.cafeLocation);
+        _stateMachine.navMeshAgentAnimationSync.CurrentDestinaton = _stateMachine.cafeLocation.position;
     }
 
     // OnStateUpdate is called on each Update frame between OnStateEnter and OnStateExit callbacks
     override public void OnStateUpdate(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
-         if (Vector3.Distance( _stateMachine.locomotionAnimation.gameObject.transform.position, _stateMachine.locomotionAnimation.targetTransform.position) < 3f)
+         if (Vector3.Distance( _stateMachine.navMeshAgentAnimationSync.gameObject.transform.position, _stateMachine.navMeshAgentAnimationSync.CurrentDestinaton) < 3f)
         {           
-            _stateMachine.locomotionAnimation.SetNavMeshDestination(_stateMachine.locomotionAnimation.gameObject.transform);
+            //_stateMachine.navMeshAgentAnimationSync.CurrentDestinaton = .SetNavMeshDestination(_stateMachine.locomotionAnimation.gameObject.transform);
             animator.SetBool("isChasing", false);
         }           
     }

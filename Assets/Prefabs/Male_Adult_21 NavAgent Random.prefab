@@ -873,7 +873,7 @@ GameObject:
   - component: {fileID: 3367726725217534417}
   - component: {fileID: 3557486688957264282}
   m_Layer: 0
-  m_Name: Male_Adult_21 NavAgent
+  m_Name: Male_Adult_21 NavAgent Random
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

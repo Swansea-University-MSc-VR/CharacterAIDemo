@@ -42,7 +42,8 @@ public class NavMeshAgentRandomLocation : MonoBehaviour
             // Check if the random point is on the NavMesh
             if (NavMesh.SamplePosition(randomPoint, out NavMeshHit hit, maxRange, NavMesh.AllAreas))
             {
-                _navMeshAgent.SetDestination(hit.position);
+                Debug.Log("Random Point: " + hit.position);
+                _navMeshAgentAnimationSync.CurrentDestinaton = hit.position;
 
                 yield return null;
                 yield return new WaitUntil(() => _navMeshAgent.remainingDistance <= _navMeshAgent.stoppingDistance);
@@ -54,5 +55,10 @@ public class NavMeshAgentRandomLocation : MonoBehaviour
                 yield return null;
             }
         }
+    }
+
+    public void StopMoving()
+    {
+        StopAllCoroutines();
     }
 }

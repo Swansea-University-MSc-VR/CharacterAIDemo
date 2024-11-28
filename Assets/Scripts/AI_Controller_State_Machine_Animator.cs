@@ -4,13 +4,20 @@ using UnityEngine;
 using UnityEngine.AI;
 public class AI_Controller_State_Machine_Animator : MonoBehaviour
 {
-    public LocomotionAnimation locomotionAnimation;
     public Animator stateMachineAnimator;
+    public NavMeshAgentAnimationSync navMeshAgentAnimationSync;
+    public NavMeshAgentRandomLocation navMeshAgentRandomLocation;
 
     public Transform cafeLocation;
     public Transform homeLocation;
 
     public Transform moveTarget;
+
+    private void Start()
+    {
+        navMeshAgentAnimationSync = transform.parent.GetComponent<NavMeshAgentAnimationSync>();
+        navMeshAgentRandomLocation = transform.parent.GetComponent<NavMeshAgentRandomLocation>();
+    }
 
     private void OnEnable()
     {
@@ -19,6 +26,7 @@ public class AI_Controller_State_Machine_Animator : MonoBehaviour
 
     private void Newspaper_onCelebritySpottedAtCafe()
     {
+        navMeshAgentRandomLocation.StopMoving();
         moveTarget = cafeLocation;
         stateMachineAnimator.SetBool("isChasing", true);
     }

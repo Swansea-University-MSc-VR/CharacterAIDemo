@@ -34,7 +34,7 @@ public class NavMeshAgentMousClickSetDestination : MonoBehaviour
 
             if (Physics.Raycast(ray, out RaycastHit hit, float.MaxValue))
             {
-               _navMeshAgentAnimationSync.SetNavMeshDestination(hit.point);
+                _navMeshAgentAnimationSync.CurrentDestinaton = hit.point;
             }
         }
     }

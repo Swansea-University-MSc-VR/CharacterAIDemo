@@ -10,7 +10,7 @@ public class StateMachine_GoHome : StateMachineBehaviour
     override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
         _stateMachine = animator.gameObject.GetComponent<AI_Controller_State_Machine_Animator>();
-        _stateMachine.locomotionAnimation.SetNavMeshDestination(_stateMachine.homeLocation);
+        _stateMachine.navMeshAgentAnimationSync.CurrentDestinaton = _stateMachine.homeLocation.position;
     }
 
     // OnStateUpdate is called on each Update frame between OnStateEnter and OnStateExit callbacks

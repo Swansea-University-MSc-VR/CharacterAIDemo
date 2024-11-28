@@ -10,7 +10,7 @@ public class StateMachine_TakePhoto : StateMachineBehaviour
     override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
         _stateMachine = animator.gameObject.GetComponent<AI_Controller_State_Machine_Animator>();
-        _stateMachine.locomotionAnimation.animator.SetTrigger("TakePhoto");
+        _stateMachine.stateMachineAnimator.SetTrigger("TakePhoto");
     }
 
     // OnStateUpdate is called on each Update frame between OnStateEnter and OnStateExit callbacks
